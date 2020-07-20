@@ -1,9 +1,77 @@
 /* add css module styles here (optional) */
 
-.test {
+.root {
   margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
+  padding: 0.25em 0.75em;
+  /* border: 2px solid #000; */
+  border-radius: 12px;
+  width: fit-content;
   font-size: 2em;
   text-align: center;
+  cursor: pointer;
+  transition: opacity 125ms linear;
 }
+
+.root:hover {
+  opacity: .85;
+}
+
+.chat_wrapper {
+  background-color: blue;
+  /* border-top-left-radius: 50px; */
+  /* border-top-right-radius: 50px; */
+  border-radius: 12px;
+  /* padding: 8px; */
+  overflow: hidden;
+  margin: auto 8px;
+  max-height: calc(100vh - 8px - 8px);
+  height: calc(100vh - 8px - 8px);
+}
+
+#chat_wrapper_inner {
+  background-color: #EB2764;
+  display: flex;
+  font-weight: 800;
+  max-height: calc(100% - 8px - 8px);
+  height: calc(100% - 8px - 8px);
+  /* border-top-left-radius: 50px;
+  border-top-right-radius: 50px; */
+}
+
+#chat_wrapper_users {
+  /* width: 145px; */
+  border-right: 2px solid rgba(0,0,0,.25);
+  overflow-y: scroll;
+  max-height: calc(100% - 8px - 8px);
+  height: calc(100% - 8px - 8px);
+}
+
+.chat_user {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 12px;
+  cursor: pointer;
+  transition: all 125ms ease-in-out;
+}
+
+.chat_user:hover {
+  background-color: black;
+}
+
+#chat_wrapper_users img {
+  max-width: 86px;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 2px;
+}
+
+#chat_wrapper_users .username {
+  /* margin-bottom: 12px; */
+  font-size: 1.2rem;
+}
+
+#chat_wrapper_messages {
+  padding: 6px;
+}
+
