@@ -19,7 +19,7 @@ const App = () => {
   return <div>
     <div onClick={()=>{
       console.log(chatRef);
-      chatRef.current.createNewChatMessage("BQPCTducNBepxzqkVLXICJfvtg12","participant2");
+      chatRef.current.createNewChatMessage("BQPCTducNBepxzqkVLXICJfvtg12","TmyvTarXsSMzkStJPycd69KYlj03");
     }}>
       New Message
     </div>
